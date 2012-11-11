@@ -710,7 +710,7 @@ static json_t *json_option(const struct nh_option_desc *option)
 	    break;
 	    
 	case OPTTYPE_MSGTYPE:
-	    jobjdesc = json_object();
+	    joptdesc = json_object();
 	    joptval = json_array();
 	    if (option->value.mt) {
 		for (i = 0; i < option->value.mt->num_rules; i++) {

@@ -1,0 +1,47 @@
+# Example nhserver.conf file
+
+# PID file location (default: /var/run/nhserver.pid)
+# pidfile=/var/run/nhserver.pid
+
+# Log file location (default: /var/log/nhserver.log)
+# logfile=/var/log/nhserver.log
+
+# Server port (default: 7116)
+# port=7116
+
+# IPv4 address on which server will bind
+# ipv4addr=0.0.0.0
+
+# IPv6 address on which server will bind
+# ipv6addr=::
+
+# Disable binding on either IPv4 or IPv6 (values: v4, v6)
+# disable_family=v6
+
+# UNIX Socket file to use
+# unixsocket=/tmp/nhsocket
+
+# Disable daemon mode (default: false)
+# nodaemon=false
+
+# Work directory (default: /var/lib/NitroHack/)
+# workdir=/var/lib/NitroHack/
+
+# Client timeout value in seconds (default: 900 seconds, or 15 minutes)
+# client_timeout=900
+
+##### DATABASE CONFIGURATION #####
+# Database hostname
+# dbhost=localhost
+
+# Database port
+# dbport=5432
+
+# Database username
+# dbuser=nitrohack
+
+# Database password
+# dbpass=R0dn3y
+
+# Database name
+# dbname=nitrohack_server
