@@ -94,6 +94,32 @@ Unicode characters, more fonts (I recommend Liberation Mono), dark gray (set it
 in UnNitroHack's options), unrestricted window size, a choice of cursor style
 and more; just right click and choose "Options...".
 
+
+To build UnNitroHack on OS X:
+
+    1) Install the Homebrew and the Command Line Tools for Xcode
+      - Homebrew: http://mxcl.github.com/homebrew/
+      - Xcode (or the Command Line Tools): http://developer.apple.com/downloads
+    2) Install dependencies via Homebrew:
+      - brew install jansson cmake
+    3) Ncursesw provided by Homebrew-dupes is currently buggy: https://github.com/Homebrew/homebrew-dupes/issues/43
+      - Until that bug is merged upstream, you'll need to install the patched version:
+       * brew install https://gist.github.com/gcatlin/3098450/raw/8cc12bc4d095e654876744cdfa6eb57a24186589/ncurses.rb
+    4) Get the UnNitroHack source code:
+      - 'cd ~'
+      - 'git clone -b unnethack git://github.com/tung/NitroHack.git unnitrohack'
+      - 'cd unnitrohack'
+    5) Build:
+      - Set the installation location:
+       * export NH_INSTALL_DIR=$HOME/unnitrohack
+      - mkdir build
+      - cd build
+      - cmake -DUSE_OSX_HOMEBREW_CURSES=TRUE -DCMAKE_BUILD_TYPE=Debug  -DSHELLDIR=$NH_INSTALL_DIR -DBINDIR=$NH_INSTALL_DIR/data -DDATADIR=$NH_INSTALL_DIR/data -DLIBDIR=$NH_INSTALL_DIR/data ..
+      - make
+      - make install
+
+
+
 See also:
 
     - Full UnNitroHack change list: https://github.com/tung/NitroHack/wiki

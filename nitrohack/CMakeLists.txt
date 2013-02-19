@@ -9,6 +9,7 @@ else ()
     set (PDCURSES_LIBNAME "pdcurses")
 endif ()
 
+
 if (USE_PDCURSES)
     set (PDCURSES_LIB_DIR "" CACHE PATH "Location of the pdcurses library")
     set (PDCURSES_INC_DIR "" CACHE PATH "Location of the pdcurses header")
@@ -16,6 +17,9 @@ if (USE_PDCURSES)
     include_directories (${PDCURSES_INC_DIR})
     add_definitions (-DPDCURSES)
 endif ()
+if (USE_OSX_HOMEBREW_CURSES)
+    add_definitions(-DUSE_OSX_HOMEBREW_CURSES)
+endif()
 
 
 set (NH_CURSES_SRC
@@ -43,7 +47,6 @@ if (ENABLE_NETCLIENT)
         src/netgame.c
         src/netplay.c)
 endif ()
-    
 if (WIN32)
     set (NH_CURSES_SRC ${NH_CURSES_SRC} rc/nh_ico.rc)
 endif ()
@@ -65,7 +68,11 @@ target_link_libraries(nitrohack_curses nitrohack)
 if (USE_PDCURSES)
     target_link_libraries (nitrohack_curses ${PDCURSES_LIBNAME})
 else ()
-    target_link_libraries (nitrohack_curses ncursesw)
+    if(USE_OSX_HOMEBREW_CURSES)
+        target_link_libraries (nitrohack_curses ncurses)
+    else ()
+        target_link_libraries (nitrohack_curses ncursesw)
+    endif ()
 endif ()
 
 if (ENABLE_NETCLIENT)
