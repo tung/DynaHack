@@ -38,6 +38,7 @@ include_directories (
 
 add_library(libnitrohack ${LIB_TYPE} ${LIBNITROHACK_SRC} ${LIBNITROHACK_GENERATED_SRC})
 set_target_properties(libnitrohack PROPERTIES OUTPUT_NAME nitrohack )
+target_link_libraries(libnitrohack z) 
 
 add_dependencies (libnitrohack makedefs_headers)
 
