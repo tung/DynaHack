@@ -800,7 +800,7 @@ static void ccmd_set_option(json_t *params)
 	    for (i = 0; i < mtrs.num_rules; i++) {
 		struct nh_msgtype_rule *mtr = &mtrs.rules[i];
 		if (json_unpack(json_array_get(joval, i), "{ss,si}",
-				"pattern", &pattern, "action", mtr->action) == -1)
+				"pattern", &pattern, "action", &mtr->action) == -1)
 		    exit_client("Error unpacking msgtype rule");
 		strncpy(mtr->pattern, pattern, sizeof(mtr->pattern));
 		mtr->pattern[sizeof(mtr->pattern) - 1] = '\0';
