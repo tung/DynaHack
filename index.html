@@ -1,0 +1,300 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Dynahack by tung</title>
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="javascripts/respond.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <!--[if lt IE 8]>
+    <link rel="stylesheet" href="stylesheets/ie.css">
+    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+  </head>
+  <body>
+      <div id="header">
+        <nav>
+          <li class="fork"><a href="https://github.com/tung/DynaHack">View On GitHub</a></li>
+          <li class="downloads"><a href="https://github.com/tung/DynaHack/zipball/master">ZIP</a></li>
+          <li class="downloads"><a href="https://github.com/tung/DynaHack/tarball/master">TAR</a></li>
+          <li class="title">DOWNLOADS</li>
+        </nav>
+      </div><!-- end header -->
+
+    <div class="wrapper">
+
+      <section>
+        <div id="title">
+          <h1>Dynahack</h1>
+          <p>A NetHack variant with UnNetHack's new content/challenges, NitroHack's UI, GruntHack's random magical items, and more</p>
+          <hr>
+          <span class="credits left">Project maintained by <a href="https://github.com/tung">tung</a></span>
+          <span class="credits right">Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></span>
+        </div>
+
+        <h1>
+<a name="dynahack" class="anchor" href="#dynahack"><span class="octicon octicon-link"></span></a>DynaHack</h1>
+
+<p>DynaHack is an experimental variant of NetHack.  It mainly merges the new
+content and challenges of UnNetHack (up to version 4.1.1) onto NitroHack as a
+base, with its new resizable ASCII interface.  It also includes the save system,
+many bug fixes and selected interface changes from NetHack4, magical equipment
+from GruntHack, and some original changes to add variety and fairness to the
+gameplay.</p>
+
+<h2>
+<a name="interface-changes" class="anchor" href="#interface-changes"><span class="octicon octicon-link"></span></a>Interface changes</h2>
+
+<p>DynaHack adopts NitroHack's interface, allowing it to make better use of larger
+terminal sizes, showing a multi-line message box and inventory sidebar.  Windows
+players will want to change the win_width and win_height options (resizing works
+automatically on Linux and OS X).</p>
+
+<p>Options in DynaHack are set in-game, unlike NetHack which uses a config file.
+There are no means to import config files; instead, play some test games and
+change options to taste.</p>
+
+<p>Other interface changes include:</p>
+
+<ul>
+<li>Item action menus.</li>
+<li>New and improved quick command reference (type '??').</li>
+<li>Colored status area and HP/Pw bars.</li>
+<li>Colors for walls and floors of branches and special rooms.</li>
+<li>msgtype option to force "--More--" prompts and hide messages.</li>
+<li>Menus for choosing floor items when eating and looting.</li>
+</ul><p>Some interface changes provide more information than in NetHack:</p>
+
+<ul>
+<li>Item weights and carrying capacity shown.</li>
+<li>Red/green highlight when attributes change.</li>
+<li>Highlighting for peacefuls, locked doors, item piles and covered stairs.</li>
+<li>hp_notify option to show messages when damage is taken.</li>
+<li>delay_msg option to show messages for multi-turn actions and delays.</li>
+<li>Corpses show rotten/very rotten when unsafe to eat.</li>
+<li>Required and remaining slots shown when viewing and enhancing skills.</li>
+<li>Remaining memory for spells shown.</li>
+</ul><p>Several changes have been made to make the game more convenient to play:</p>
+
+<ul>
+<li>Ctrl-O shows dungeon overview and previous levels.</li>
+<li>Ctrl-X shows intrinsic resistances and properties.</li>
+<li>Ctrl-E engraves "Elbereth", which scares monsters.</li>
+<li>Auto-unlock for doors/containers, auto-loot after auto-unlocking containers.</li>
+<li>Resting and searching stop when HP/Pw fully recover.</li>
+<li>'ff' fires in the last direction fired in.</li>
+</ul><p>For those used to playing on NAO, automatic travel can target stairs even when
+covered, stops when becoming hungry or enemies come into view, routes around
+peacefuls and even works in Sokoban.</p>
+
+<p>Autopickup is much smarter and more useful than in NetHack thanks to the
+autopickup rules system, offering fine-grained control over what it picks up or
+leaves.  It works much like autopickup exceptions, but can filter not only by
+name, but also item class and blessing/curses.  The default rules leave shop
+items alone, but the sky's the limit in what it can do.  Autopickup also leaves
+dropped items alone, and grabs thrown/fired items.</p>
+
+<p>Item class filters are smarter: choosing "cursed" and "armor" will match only
+cursed armor, whereas in NetHack this would show all cursed items mixed with all
+armor.</p>
+
+<p>DynaHack features fully remappable controls, which is especially useful for
+people with QWERTZ keyboards.</p>
+
+<h2>
+<a name="new-content" class="anchor" href="#new-content"><span class="octicon octicon-link"></span></a>New content</h2>
+
+<p>DynaHack was originally a merge of UnNetHack's gameplay with NitroHack as its
+base, so all of this new content sources from UnNetHack 4.1.1:</p>
+
+<ul>
+<li>Over 80 new special levels.</li>
+<li>Revamped Gehennom with special segments to explore and open caverns for a
+faster and riskier descent.</li>
+<li>New branches: Town, Black Market, Dragon Caves.</li>
+<li>New special rooms: nymph gardens, dilapidated armories.</li>
+<li>New shops: tin shops, instrument shops, pet stores.</li>
+<li>New items: rings of gain intelligence/wisdom/dexterity, potions of blood and
+vampire blood, scroll of flood, iron safe, tinfoil hat, striped shirt,
+Thiefbane, Luck Blade.</li>
+<li>New monsters: gold and chromatic dragons, snow ants, vorpal jabberwocks,
+disintegrators, giant turtles, wax golems, locusts, enormous rats, rodents of
+unusual size.</li>
+</ul><h2>
+<a name="new-challenges" class="anchor" href="#new-challenges"><span class="octicon octicon-link"></span></a>New challenges</h2>
+
+<p>Level difficulty in DynaHack differs from NetHack.  The maximum level of
+monsters that are generated on a level in NetHack is the average of the level's
+depth and your experience level.  In DynaHack, only depth counts towards level
+difficulty.  Experience levels tend to plateau, so overall level difficulty
+scales faster and higher than in NetHack.  This would seem to make the game
+harder, but the change also exists in NetHack4, which has been won by multiple
+people, so the challenge is definitely surmountable.</p>
+
+<p>Like UnNetHack, wishing in DynaHack is divided into magical and non-magical
+items.  Only the wand of wishing can grant wishes for magical items, while every
+other source can only provide non-magical items.  Examples of useful non-magical
+items include the shield of reflection and dragon scales (but not dragon scale
+mail).  A magic lamp is permitted as an exception for non-magical wishes.
+Unlike in NetHack, wands of wishing cannot be recharged.</p>
+
+<p>Dragons in DynaHack work much like in UnNetHack: names and colors are randomized
+every game, so in one game a red dragon may be a tatzelworm and breathe ice, and
+in another it may be called a draken and breath disintegration.  This means
+wishing for dragon armor no longer gives a free ticket to reflection or magic
+resistance.  On top of this, dragon armor in general is heavier and provides
+less AC than in NetHack; dragon scale mail is 2/3 the weight and the same AC as
+elven mithril coats.</p>
+
+<p>DynaHack introduces color alchemy from UnNetHack, meaning that potions will mix
+by their colors instead of by their type, e.g. a red potion mixed with a yellow
+potion makes an orange potion.  In some games this leads to interesting
+combinations, but this also breaks the NetHack practice of alchemizing large
+stacks of potions of full healing that could as much as double the max HP of
+characters.</p>
+
+<p>With its roots in UnNetHack, DynaHack also adds these new challenges:</p>
+
+<ul>
+<li>Elbereth is ignored by quest nemeses, unique demons and Vlad the Impaler.</li>
+<li>Mysterious force removed (downward levelport while ascending through
+Gehennom); Amulet now prevents all forms of teleportation.</li>
+<li>Scrolls of gold detection can no longer be used to detect traps; crystal
+balls have been made easier to use to compensate.</li>
+<li>Scrolls of genocide only affect a single monster type when blessed, or the
+same on only the current level when uncursed.</li>
+<li>Fighting creates noise which wakes nearby monsters, depending on stealth and
+the size of the weapon.</li>
+<li>Unicorn horns no longer restore lost attributes.</li>
+</ul><p>DynaHack addresses two common forms of farming in NetHack: pudding farming and
+throne farming.  Both of these are still possible in limited forms, but as in
+UnNetHack, puddings no longer split forever, nor do they drop any items when
+killed.  Thrones take time to loot and may disappear in the process.</p>
+
+<h2>
+<a name="more-fairness" class="anchor" href="#more-fairness"><span class="octicon octicon-link"></span></a>More fairness</h2>
+
+<p>DynaHack reduces the punishments for hazards players cannot or do not expect to
+have to defend themselves against:</p>
+
+<ul>
+<li>Warnings before walking into known traps, water and lava.</li>
+<li>Poison, the most common unavoidable instadeath, instead drains max HP.</li>
+<li>Floating eyes paralyze for half as long, capped further by wisdom.</li>
+<li>Scroll of flood replaces the scroll of amnesia, making reading random scrolls
+less game-ruining.</li>
+</ul><p>DynaHack also reduces the spoiler advantage that long-time NetHack players have
+over novices by providing a newer and more informative database of item
+descriptions from NetHack4 and detailed monster descriptions from UnNetHackPlus
+(press '/' and target a monster with ';' or enter its name).</p>
+
+<h2>
+<a name="more-variety" class="anchor" href="#more-variety"><span class="octicon octicon-link"></span></a>More variety</h2>
+
+<p>DynaHack features an extensively bug-fixed version of magical items from
+GruntHack.  Any weapon, armor, amulet or ring can appear as "magical", which may
+inflict or defend against fire or frost damage, drain life, grant stealth, speed
+or reflection, or even detonate on impact.  These magical properties encourage
+using equipment that would otherwise be junk in NetHack; some equipment may even
+fill in essential ascension kit properties, freeing up equipment slots for
+alternate gear that would otherwise be displaced by ascension kit mainstays.</p>
+
+<p>Wishes for magical properties can only be granted with a wand of wishing.  Even
+then, such wishes only work for equipment that doesn't already have its own
+magical properties, e.g. no speed boots of fire resistance.  However, no such
+restriction applies to randomly generated items, so players are encouraged to
+explore to find gear that may exceed what could be wished for.</p>
+
+<p>DynaHack encourages more weapon variety.  Weapons may reveal their enchantment
+when used, based on skill and race.  Weapon skills also cross-train,
+accelerating the training of related skills to allow players to experiment with
+skills early without having to fully commit to them into the late game.  The
+weapon skill groups are:</p>
+
+<ul>
+<li>Short Blades: dagger, knife</li>
+<li>Chopping Blades: axe, pick-axe</li>
+<li>Swords: long sword, two-handed sword, scimitar, saber</li>
+<li>Bludgeons: club, mace, hammer</li>
+<li>Flails: whip</li>
+<li>Polearms: polearm, trident, lance, unicorn horn</li>
+<li>Launchers: bow, crossbow</li>
+<li>Thrown: dart, shuriken, boomerang</li>
+</ul><p>Some weapon skills (not listed above) belong to more than one group:</p>
+
+<ul>
+<li>short sword: Short Blades, Swords</li>
+<li>broadsword: Chopping Blades, Swords</li>
+<li>morning star: Bludgeons, Flails</li>
+<li>quarterstaff: Bludgeons, Polearms</li>
+<li>javelin: Polearms, Thrown</li>
+<li>sling: Launchers, Thrown</li>
+</ul><p>DynaHack introduces the new heavyshot mechanic, complementing multishot.
+Certain fired or thrown weapons, rather than launching multiple volleys, will
+instead launch a single volley that inflicts multiplied damage.  This makes
+crossbows more interesting than heavier bows with rarer ammo, and also applies
+to shuriken, spears, javelins and boomerangs.  Spears of matching race and
+javelins receive a bonus multiplier when thrown.</p>
+
+<p>Ranged combat is enhanced in DynaHack.  Items, especially ammo, stacks much more
+readily than in NetHack, ignoring differing knowledge of blessing and
+enchantment.  Further, switching main and alternate weapons using 'x' no longer
+costs a turn, making launchers more viable.</p>
+
+<p>DynaHack makes two-handed weapons viable throughout the game:</p>
+
+<ul>
+<li>Polearms and lances can be used in melee, making them easier to train early
+and usable in dark corridors.</li>
+<li>Two-handed weapons double the strength damage bonus on hits.</li>
+<li>New #tip command for containers, so players with hands stuck to a cursed
+two-handed weapon can still reach their holy water without having to
+backtrack out of Gehennom.</li>
+<li>Hands stuck to a cursed quarterstaff can still cast spells unhindered.</li>
+</ul><p>DynaHack attempts to differentiate characters of different roles by improving
+their quest artifact.  Specifically, the quest artifact cannot be stolen by the
+Wizard of Yendor, making it a reliable source of resistances.  Also, the quest
+artifact grants magic resistance when carried by their role, giving most
+characters a good reason to make use of their unique powers.</p>
+
+<p>DynaHack reduces incentives to stash and backtrack:</p>
+
+<ul>
+<li>Scrolls of ID work on 3-6 items regardless of their blessing.</li>
+<li>Wraiths can no longer be lured across levels.</li>
+</ul><h2>
+<a name="compiling-from-source" class="anchor" href="#compiling-from-source"><span class="octicon octicon-link"></span></a>Compiling from source</h2>
+
+<p>DynaHack can be compiled to run natively in Windows with
+<a href="doc/build-mingw.md">MinGW</a>, or under <a href="doc/build-cygwin.md">Cygwin</a> for those
+who prefer it.</p>
+
+<p>DynaHack can also be compiled for <a href="doc/build-linux.md">Linux</a> and <a href="doc/build-osx.md">OS
+X</a>.</p>
+
+<h2>
+<a name="bug-reports" class="anchor" href="#bug-reports"><span class="octicon octicon-link"></span></a>Bug reports</h2>
+
+<p>Bug reports should include a description (what you did, what you expected and
+what happened), as well as the specific version of the game and a copy of the
+save file if possible.</p>
+
+<p>Bug reports can be submitted to the GitHub project page at:</p>
+
+<pre><code>https://github.com/tung/DynaHack
+</code></pre>
+
+<p>Or they can be emailed to <a href="mailto:tungtn3+dynahack@gmail.com">tungtn3+dynahack@gmail.com</a>.</p>
+      </section>
+
+    </div>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+    
+  </body>
+</html>
