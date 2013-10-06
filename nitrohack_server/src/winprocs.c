@@ -481,7 +481,7 @@ static int srv_display_objects(struct nh_objitem *items, int icount, const char 
     jobj = json_pack("{so,si,si,ss}", "items", jarr, "icount", icount,
 		     "how", how, "title", title ? title : "");
     
-    if (how == PICK_NONE) {
+    if (how == PICK_NONE || how == PICK_INVACTION) {
 	add_display_data("display_objects", jobj);
 	return 0;
     }
