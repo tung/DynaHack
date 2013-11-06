@@ -1323,11 +1323,12 @@ int dotakeoff(struct obj *otmp)
 		pline("You are not wearing that.");
 		return 0;
 	}
-        if (otmp == uskin) {
+	if (otmp == uskin) {
 	        pline("The %s merged with your skin!",
 		      Is_dragon_scales(uskin->otyp) ?
-                      "dragon scales are" : "dragon scale mail is");
-        }
+		      "dragon scales are" : "dragon scale mail is");
+		return 0;
+	}
 	if (((otmp == uarm) && uarmc) ||
             ((otmp == uarmu) && (uarmc || uarm))) {
             /* TODO: replace this with a multistep remove */
