@@ -2870,12 +2870,12 @@ static void maybe_wail(void)
     }
 }
 
-void losehp(int n, const char *knam, boolean k_format)
+void losehp(int n, const char *knam, int k_format)
 {
 	losehp_how(n, knam, k_format, DIED);
 }
 
-void losehp_how(int n, const char *knam, boolean k_format, int how)
+void losehp_how(int n, const char *knam, int k_format, int how)
 {
 	if (Upolyd) {
 		u.mh -= n;
