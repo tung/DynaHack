@@ -478,6 +478,7 @@ struct monst *montraits(struct obj *obj, coord *cc)
 		   (we cleared it when loading bones) */
 		if (!mtmp2->m_id)
 		    mtmp2->m_id = mtmp->m_id;
+		mtmp2->dlevel = level;
 		mtmp2->mx   = mtmp->mx;
 		mtmp2->my   = mtmp->my;
 		mtmp2->mux  = mtmp->mux;
