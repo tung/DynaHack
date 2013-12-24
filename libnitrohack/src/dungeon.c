@@ -2026,7 +2026,7 @@ int dooverview(void)
 	}
 	
 	dnum = -1;
-	for (i = 0; i < maxledgerno(); i++) {
+	for (i = 0; i <= maxledgerno(); i++) {
 	    if (!levels[i]) continue;
 	    
 	    if (levels[i]->z.dnum != dnum) {

@@ -1697,9 +1697,9 @@ struct obj *find_oid(unsigned id)
 	    if ((obj = o_on(id, mon->minvent))) return obj;
 
 	/* search all levels */
-	for (i = 0; i < maxledgerno(); i++)
+	for (i = 0; i <= maxledgerno(); i++)
 	    if (levels[i] && (obj = find_oid_lev(levels[i], id))) return obj;
-	    
+
 	/* not found at all */
 	return NULL;
 }
