@@ -209,11 +209,11 @@ void save_occupations(struct memfile *mf)
 	save_trapset(mf);
 }
 
-void restore_occupations(struct memfile *mf)
+void restore_occupations(struct memfile *mf, struct level *lev)
 {
 	restore_remarm(mf);
-	restore_pick(mf);
-	restore_trapset(mf);
+	restore_pick(mf, lev);
+	restore_trapset(mf, lev);
 }
 
 /* If a time is given, use it to timeout this function, otherwise the

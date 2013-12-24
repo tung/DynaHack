@@ -312,7 +312,7 @@ void relink_light_sources(boolean ghostly, struct level *lev)
 		    nid = (long) ls->id;
 		if (ls->type == LS_OBJECT) {
 		    which = 'o';
-		    ls->id = find_oid(nid);
+		    ls->id = find_oid(lev, nid);
 		} else {
 		    which = 'm';
 		    ls->id = find_mid(lev, nid, FM_EVERYWHERE);

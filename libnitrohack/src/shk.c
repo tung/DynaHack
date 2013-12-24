@@ -1655,7 +1655,7 @@ static struct obj *bp_to_obj(struct bill_x *bp)
 	if (bp->useup)
 		obj = o_on(id, level->billobjs);
 	else
-		obj = find_oid(id);
+		obj = find_oid(level, id);
 	return obj;
 }
 
@@ -1677,15 +1677,19 @@ static struct obj *find_oid_lev(struct level *lev, unsigned id)
  * Look for o_id on all lists but billobj.  Return obj or NULL if not found.
  * It's OK for restore_timers() to call this function, there should not
  * be any timeouts on the billobjs chain.
+ *
+ * Not to be confused with find_oid_lev(): the lev argument here is the
+ * suggested first level to search for the object, whereas find_oid_lev()
+ * searches ONLY that level.
  */
-struct obj *find_oid(unsigned id)
+struct obj *find_oid(struct level *lev, unsigned id)
 {
 	struct obj *obj;
 	struct monst *mon;
 	int i;
-	
+
 	/* try searching the current level, if any */
-	if (level && (obj = find_oid_lev(level, id))) return obj;
+	if (lev && (obj = find_oid_lev(lev, id))) return obj;
 
 	/* first check various obj lists directly */
 	if ((obj = o_on(id, invent))) return obj;

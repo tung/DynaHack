@@ -2575,23 +2575,23 @@ void save_food(struct memfile *mf)
 }
 
 
-void restore_food(struct memfile *mf)
+void restore_food(struct memfile *mf, struct level *lev)
 {
     unsigned int oid, vflags;
     oid = mread32(mf);
-    victual.piece = oid ? find_oid(oid) : NULL;
+    victual.piece = oid ? find_oid(lev, oid) : NULL;
     victual.usedtime = mread32(mf);
     victual.reqtime = mread32(mf);
     victual.nmod = mread32(mf);
-    
+
     vflags = mread32(mf);
     victual.canchoke = (vflags >> 31) & 1;
     victual.fullwarn = (vflags >> 30) & 1;
     victual.eating   = (vflags >> 29) & 1;
     victual.doreset  = (vflags >> 28) & 1;
-    
+
     oid = mread32(mf);
-    tin.tin = oid ? find_oid(oid) : NULL;
+    tin.tin = oid ? find_oid(lev, oid) : NULL;
     tin.usedtime = mread32(mf);
     tin.reqtime = mread32(mf);
 }

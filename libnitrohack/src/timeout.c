@@ -1790,7 +1790,7 @@ void relink_timers(boolean ghostly, struct level *lev)
 			panic("relink_timers 1");
 		} else
 		    nid = (long) curr->arg;
-		curr->arg = find_oid(nid);
+		curr->arg = find_oid(lev, nid);
 		if (!curr->arg) panic("cant find o_id %d", nid);
 		curr->needs_fixup = 0;
 	    } else

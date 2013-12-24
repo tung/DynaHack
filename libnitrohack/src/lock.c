@@ -261,7 +261,7 @@ void save_pick(struct memfile *mf)
 	mwrite8(mf, picklock_dy);
 }
 
-void restore_pick(struct memfile *mf)
+void restore_pick(struct memfile *mf, struct level *lev)
 {
 	unsigned int box_id;
 
@@ -275,7 +275,7 @@ void restore_pick(struct memfile *mf)
 	xlock.door_y = mread8(mf);
 
 	box_id = mread32(mf);
-	xlock.box = box_id ? find_oid(box_id) : NULL;
+	xlock.box = box_id ? find_oid(lev, box_id) : NULL;
 
 	picklock_dx = mread8(mf);
 	picklock_dy = mread8(mf);

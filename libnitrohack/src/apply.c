@@ -1779,12 +1779,12 @@ void save_trapset(struct memfile *mf)
 	mwrite8(mf, trapinfo.force_bungle);
 }
 
-void restore_trapset(struct memfile *mf)
+void restore_trapset(struct memfile *mf, struct level *lev)
 {
 	unsigned int tobj_id;
 
 	tobj_id = mread32(mf);
-	trapinfo.tobj = tobj_id ? find_oid(tobj_id) : NULL;
+	trapinfo.tobj = tobj_id ? find_oid(lev, tobj_id) : NULL;
 
 	trapinfo.tx = mread8(mf);
 	trapinfo.ty = mread8(mf);

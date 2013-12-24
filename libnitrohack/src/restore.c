@@ -510,13 +510,13 @@ static void restgamestate(struct memfile *mf)
 	lastinvnr = mread32(mf);
 	restore_mt_state(mf);
 	restore_track(mf);
-	restore_food(mf);
+	restore_food(mf, lev);
 	restore_steal(mf);
 	restore_dig_status(mf);
-	restore_occupations(mf);
+	restore_occupations(mf, lev);
 	bookid = mread32(mf);
 	if (bookid)
-	    book = find_oid(bookid);
+	    book = find_oid(lev, bookid);
 	stetho_last_used_move = mread32(mf);
 	stetho_last_used_movement = mread32(mf);
 	multi = mread32(mf);
