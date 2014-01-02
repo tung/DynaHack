@@ -1122,12 +1122,12 @@ void goto_level(d_level *newlevel, boolean at_stairs, boolean falling, boolean p
 		/* grow herbs and/or trees while on another level */
 		catchup_dgn_growths(level, (moves - level->lastmoves) / 5);
 	}
-	
+
 	/* some timers and lights might need to be transferred to the new level
 	 * if they are attached to objects the hero is carrying */
-	transfer_timers(origlev, level);
-	transfer_lights(origlev, level);
-	
+	transfer_timers(origlev, level, 0);
+	transfer_lights(origlev, level, 0);
+
 	/* do this prior to level-change pline messages */
 	vision_reset();		/* clear old level's line-of-sight */
 	vision_full_recalc = 0;	/* don't let that reenable vision yet */

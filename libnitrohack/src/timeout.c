@@ -1679,19 +1679,25 @@ static int maybe_write_timer(struct memfile *mf, struct level *lev, int range, b
 }
 
 
-void transfer_timers(struct level *oldlev, struct level *newlev)
+void transfer_timers(struct level *oldlev, struct level *newlev, unsigned int obj_id)
 {
     timer_element *curr, *prev = NULL, *next_timer = NULL;
-    
+
+    if (newlev == oldlev)
+	return;
+
     for (curr = oldlev->lev_timers; curr; curr = next_timer) {
 	next_timer = curr->next;	/* in case curr is removed */
 
-	if ( !timer_is_local(curr) ) {
+	/* transfer global timers or timers of requested object */
+	if ((!obj_id && !timer_is_local(curr)) ||
+	    (obj_id && curr->kind == TIMER_OBJECT &&
+	     ((struct obj *)curr->arg)->o_id == obj_id)) {
 	    if (prev)
 		prev->next = curr->next;
 	    else
 		oldlev->lev_timers = curr->next;
-	    
+
 	    curr->next = newlev->lev_timers;
 	    newlev->lev_timers = curr;
 	    /* prev stays the same */

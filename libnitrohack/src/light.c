@@ -210,25 +210,34 @@ struct monst *find_mid(struct level *lev, unsigned nid, unsigned fmflags)
 }
 
 
-void transfer_lights(struct level *oldlev, struct level *newlev)
+void transfer_lights(struct level *oldlev, struct level *newlev, unsigned int obj_id)
 {
     light_source **prev, *curr;
-    boolean is_global;
-    
+    boolean transfer;
+
+    if (newlev == oldlev)
+	return;
+
     for (prev = &oldlev->lev_lights; (curr = *prev) != 0; ) {
 	switch (curr->type) {
 	    case LS_OBJECT:
-		is_global = !obj_is_local((struct obj *)curr->id);
+		if (obj_id)
+		    transfer = (((struct obj *)curr->id)->o_id == obj_id);
+		else
+		    transfer = !obj_is_local((struct obj *)curr->id);
 		break;
 	    case LS_MONSTER:
-		is_global = !mon_is_local((struct monst *)curr->id);
+		if (obj_id)
+		    transfer = FALSE;
+		else
+		    transfer = !mon_is_local((struct monst *)curr->id);
 		break;
 	    default:
-		is_global = FALSE;
+		transfer = FALSE;
 		break;
 	}
 	/* associate all global light sources with the new level */
-	if (is_global) {
+	if (transfer) {
 	    *prev = curr->next;
 	    curr->next = newlev->lev_lights;
 	    newlev->lev_lights = curr;

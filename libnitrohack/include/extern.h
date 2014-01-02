@@ -743,7 +743,8 @@ extern void new_light_source(struct level *lev, xchar x, xchar y,
 extern void del_light_source(struct level *lev, int type, void *id);
 extern void do_light_sources(char **);
 extern struct monst *find_mid(struct level *lev, unsigned nid, unsigned fmflags);
-extern void transfer_lights(struct level *oldlev, struct level *newlev);
+extern void transfer_lights(struct level *oldlev, struct level *newlev,
+			    unsigned int obj_id);
 extern void save_light_sources(struct memfile *mf, struct level *lev, int range);
 extern void free_light_sources(struct level *lev);
 extern void restore_light_sources(struct memfile *mf, struct level *lev);
@@ -1689,7 +1690,8 @@ extern void obj_move_timers(struct obj *, struct obj *);
 extern void obj_split_timers(struct obj *, struct obj *);
 extern void obj_stop_timers(struct obj *);
 extern boolean obj_is_local(struct obj *);
-extern void transfer_timers(struct level *oldlev, struct level *newlev);
+extern void transfer_timers(struct level *oldlev, struct level *newlev,
+			    unsigned int obj_id);
 extern void save_timers(struct memfile *mf, struct level *lev, int range);
 extern void free_timers(struct level *lev);
 extern void restore_timers(struct memfile *mf, struct level *lev, int range,

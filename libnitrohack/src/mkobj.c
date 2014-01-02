@@ -1406,8 +1406,11 @@ void dealloc_obj(struct obj *obj)
 void set_obj_level(struct level *lev, struct obj *obj)
 {
     struct obj *cobj;
-    
+
+    transfer_timers(obj->olev, lev, obj->o_id);
+    transfer_lights(obj->olev, lev, obj->o_id);
     obj->olev = lev;
+
     for (cobj = obj->cobj; cobj; cobj = cobj->nobj)
 	set_obj_level(lev, cobj);
 }
