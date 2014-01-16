@@ -1274,27 +1274,20 @@ void restore_timeout(struct memfile *mf)
 }
 
 
-/* If defined, then include names when printing out the timer queue */
-#define VERBOSE_TIMER
-
 typedef struct {
     timeout_proc f, cleanup;
-#ifdef VERBOSE_TIMER
     const char *name;
-# define TTAB(a, b, c) {a,b,c}
-#else
-# define TTAB(a, b, c) {a,b}
-#endif
 } ttable;
 
 /* table of timeout functions */
+#define TTAB(a, b) {a, b, #a}
 static const ttable timeout_funcs[NUM_TIME_FUNCS] = {
-    TTAB(rot_organic,	(timeout_proc)0,	"rot_organic"),
-    TTAB(rot_corpse,	(timeout_proc)0,	"rot_corpse"),
-    TTAB(revive_mon,	(timeout_proc)0,	"revive_mon"),
-    TTAB(burn_object,	cleanup_burn,		"burn_object"),
-    TTAB(hatch_egg,	(timeout_proc)0,	"hatch_egg"),
-    TTAB(fig_transform,	(timeout_proc)0,	"fig_transform")
+    TTAB(rot_organic,	NULL),
+    TTAB(rot_corpse,	NULL),
+    TTAB(revive_mon,	NULL),
+    TTAB(burn_object,	cleanup_burn),
+    TTAB(hatch_egg,	NULL),
+    TTAB(fig_transform,	NULL)
 };
 #undef TTAB
 
@@ -1315,19 +1308,13 @@ static void print_queue(struct menulist *menu, timer_element *base)
     char buf[BUFSZ];
 
     if (!base) {
-	add_menutext(menu, "<empty>");
+	add_menutext(menu,	"<empty>");
     } else {
-	add_menutext(menu, "timeout  id   kind   call");
+	add_menutext(menu,	"timeout  id   kind   call");
 	for (curr = base; curr; curr = curr->next) {
-#ifdef VERBOSE_TIMER
-	    sprintf(buf, " %4u   %4u  %-6s %s(%p)",
+	    sprintf(buf,	" %4u  %4u   %-6s #%d %s (%p)",
 		curr->timeout, curr->tid, kind_name(curr->kind),
-		timeout_funcs[curr->func_index].name, curr->arg);
-#else
-	    sprintf(buf, " %4u   %4u  %-6s #%d(%p)",
-		curr->timeout, curr->tid, kind_name(curr->kind),
-		curr->func_index, curr->arg);
-#endif
+		curr->func_index, timeout_funcs[curr->func_index].name, curr->arg);
 	    add_menutext(menu, buf);
 	}
     }
