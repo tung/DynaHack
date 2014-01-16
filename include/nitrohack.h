@@ -7,10 +7,10 @@
 #ifndef NITROHACK_H
 #define NITROHACK_H
 
-/* DynaHack 0.5.4 */
+/* DynaHack 0.5.5 */
 #define VERSION_MAJOR	0
 #define VERSION_MINOR	5
-#define PATCHLEVEL	4
+#define PATCHLEVEL	5
 
 #include "nitrohack_types.h"
 
