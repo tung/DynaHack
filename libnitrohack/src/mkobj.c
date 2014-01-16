@@ -587,7 +587,7 @@ struct obj *mksobj(struct level *lev, int otyp, boolean init, boolean artif)
 			otmp->corpsenm = rndmonnum(lev);
 			if (!verysmall(&mons[otmp->corpsenm]) &&
 				rn2(level_difficulty(&lev->z)/2 + 10) > 10)
-			    add_to_container(otmp, mkobj(level, SPBOOK_CLASS,FALSE));
+			    add_to_container(otmp, mkobj(lev, SPBOOK_CLASS,FALSE));
 		}
 		break;
 	case COIN_CLASS:
