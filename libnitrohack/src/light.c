@@ -236,7 +236,7 @@ void transfer_lights(struct level *oldlev, struct level *newlev, unsigned int ob
 		transfer = FALSE;
 		break;
 	}
-	/* associate all global light sources with the new level */
+	/* associate light sources with the new level */
 	if (transfer) {
 	    *prev = curr->next;
 	    curr->next = newlev->lev_lights;
