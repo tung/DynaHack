@@ -1407,8 +1407,11 @@ void set_obj_level(struct level *lev, struct obj *obj)
 {
     struct obj *cobj;
 
-    transfer_timers(obj->olev, lev, obj->o_id);
-    transfer_lights(obj->olev, lev, obj->o_id);
+    if (obj->timed)
+	transfer_timers(obj->olev, lev, obj->o_id);
+    if (obj->lamplit)
+	transfer_lights(obj->olev, lev, obj->o_id);
+
     obj->olev = lev;
 
     for (cobj = obj->cobj; cobj; cobj = cobj->nobj)
