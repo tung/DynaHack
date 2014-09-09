@@ -3,6 +3,19 @@
 <!doctype html>
 <html>
   <head>
+    {% if site.enforce_ssl %}
+      <!--
+        Redirect visitors to the HTTPS version of this GitHub Pages site,
+        but only check when on the production domain.
+
+        https://konklone.com/post/github-pages-now-supports-https-so-use-it
+      -->
+      <script>
+        var enforce = "{{ site.enforce_ssl }}";
+        if (enforce === window.location.host && window.location.protocol !== "https:")
+          window.location = window.location.toString().replace(/^http:/, "https:");
+      </script>
+    {% endif %}
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
     <title>DynaHack</title>
