@@ -1,0 +1,19 @@
+---
+layout: default
+---
+<h2>Posts by {{ page.author }}</h2>
+
+{{ content }}
+
+{% comment %}
+    I wanted a count of the number of posts by this author, but sadly neither
+    Jekyll nor Liquid provide any way to do this. :(
+{% endcomment %}
+
+{% for post in site.posts %}
+    {% if post.author == page.author %}
+        <article>
+            {% include posthead.html %}
+        </article>
+    {% endif %}
+{% endfor %}

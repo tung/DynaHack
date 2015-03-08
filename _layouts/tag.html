@@ -1,0 +1,24 @@
+---
+layout: default
+---
+<h2>Posts tagged with '{{ page.tag }}'</h2>
+
+{{ content }}
+
+<p>
+{% if site.tags[page.tag].size == 0 %}
+    There are currently no posts tagged '{{ page.tag }}'.
+{% else %}
+    {% if site.tags[page.tag].size == 1 %}
+        There is 1 post tagged '{{ page.tag }}'.
+    {% else %}
+        There are {{ site.tags[page.tag] | size }} posts tagged '{{ page.tag }}'.
+    {% endif %}
+{% endif %}
+</p>
+
+{% for post in site.tags[page.tag] %}
+    <article>
+        {% include posthead.html %}
+    </article>
+{% endfor %}

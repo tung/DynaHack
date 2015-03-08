@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+<head>
+    <!--
+      Redirect visitors to the HTTPS version of this GitHub Pages site,
+      but only check when on the production domain.
+
+      https://konklone.com/post/github-pages-now-supports-https-so-use-it
+    -->
+    <script>
+        var enforce = "tung.github.io";
+        if (enforce === window.location.host && window.location.protocol !== "https:")
+            window.location = window.location.toString().replace(/^http:/, "https:");
+    </script>
+
+    <meta charset="utf-8">
+    <title>{% if page.title %}{{ page.title }} - {% endif %}DynaHack</title>
+    <link rel="alternate"
+          type="application/rss+xml"
+          title="{{ site.title }} - {{ site.description }} - Feed"
+          href="{{ site.baseurl }}/feed.xml">
+    <link rel="stylesheet"
+          href="{{ site.baseurl }}/css/style.css">
+    <link rel="stylesheet"
+          href="{{ site.baseurl }}/css/pygment_trac.css">
+    <link rel="icon"
+          type="image/x-icon"
+          href="{{ site.baseurl }}/favicon.ico">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>DynaHack</h1>
+            <p>A NetHack variant with randomized equipment, new items, new monsters, new maps, new challenges and an advanced ASCII interface.</p>
+        </header>
+
+        {% include nav.html %}
+
+        <main>
+            {{ content }}
+        </main>
+    </div>
+    <!-- Based on a GitHub Pages theme by mattgraham - https://twitter.com/michigangraham -->
+</body>
+</html>

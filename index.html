@@ -1,0 +1,17 @@
+---
+layout: default
+---
+{% if paginator.previous_page %}
+    {% include pagination.html %}
+{% endif %}
+
+{% for post in paginator.posts %}
+    <article>
+        {% include posthead.html %}
+        <div class="post-content">
+            {{ post.content }}
+        </div>
+    </article>
+{% endfor %}
+
+{% include pagination.html %}

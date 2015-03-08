@@ -1,0 +1,56 @@
+url: https://tung.github.io
+baseurl: /DynaHack
+enforce_ssl: tung.github.io
+permalink: pretty
+paginate: 5
+
+title: DynaHack
+description: >
+  A NetHack variant with randomized equipment, new items, new monsters, new
+  maps, new challenges and an advanced ASCII interface.
+
+latest_version: 0.5.5
+project_url: https://github.com/tung/DynaHack
+download_url: https://github.com/tung/DynaHack/releases/tag/v0.5.5
+releases_url: https://github.com/tung/DynaHack/releases
+
+kramdown:
+  input: GFM
+
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      layout: "default"
+      nav: "blog"
+  -
+    scope:
+      path: ""
+      type: "post"
+    values:
+      layout: "post"
+  -
+    scope:
+      path: ""
+      type: "draft"
+    values:
+      layout: "post"
+  -
+    scope:
+      path: "authors"
+    values:
+      layout: "author"
+  -
+    scope:
+      path: "tags"
+    values:
+      layout: "tag"
+
+collections:
+  authors:
+    output: true
+    permalink: /authors/:path/
+  tags:
+    output: true
+    permalink: /tags/:path/

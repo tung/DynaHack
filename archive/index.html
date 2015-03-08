@@ -1,0 +1,23 @@
+---
+layout: default
+title: Archive
+---
+<h2>Archive</h2>
+
+<p>
+{% if site.posts.size == 0 %}
+    There are currently no posts in this blog.
+{% else %}
+    {% if site.posts.size == 1 %}
+        There are currently only 1 post in this blog.
+    {% else %}
+        There are {{ site.posts | size }} posts in this blog.
+    {% endif %}
+{% endif %}
+</p>
+
+{% for post in site.posts %}
+    <article>
+        {% include posthead.html %}
+    </article>
+{% endfor %}

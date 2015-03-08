@@ -1,0 +1,27 @@
+<div class="pagination">
+    {% if paginator.previous_page %}
+        {% comment %}
+            Jekyll's paginator doesn't generate page01/index.html, so we need
+            to make a special case for it here.
+        {% endcomment %}
+        {% if paginator.page == 2 %}
+            <a class="pagination-newer" href="{{ site.baseurl }}/">&laquo; Newer</a>
+        {% else %}
+            <a class="pagination-newer" href="{{ site.baseurl }}/page{{ paginator.previous_page }}/">&laquo; Newer</a>
+        {% endif %}
+    {% else %}
+        <span class="pagination-newer">&laquo; Newer</span>
+    {% endif %}
+
+    <span class="pagination-page">Page
+        <span class="pagination-page-number">{{ paginator.page }}</span>
+        of
+        <span class="pagination-total-pages">{{ paginator.total_pages }}</span>
+    </span>
+
+    {% if paginator.next_page %}
+        <a class="pagination-older" href="{{ site.baseurl }}/page{{ paginator.next_page }}/">Older &raquo;</a>
+    {% else %}
+        <span class="pagination-older">Older &raquo;</span>
+    {% endif %}
+</div>

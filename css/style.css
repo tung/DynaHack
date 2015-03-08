@@ -1,0 +1,161 @@
+---
+layout: null
+---
+@import url("{{ site.baseurl }}/css/fonts.css");
+
+body {
+    background-color: #222;
+    color: #f7e0d5;
+    font: 14px/1.5 'OpenSansRegular', sans-serif;
+    margin-top: 20px;
+}
+
+strong {
+    font: 14px/1.5 'OpenSansSemiBold';
+}
+
+i {
+    font: 14px/1.5 'OpenSansItalic';
+}
+
+header h1 {
+    color: #e8e8e8;
+    font-family: 'OpenSansLight';
+    font-size: 40px;
+    font-weight: normal;
+    line-height: 36px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+header p {
+    color: #d7cfbe;
+    font-family: 'OpenSansLight';
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 1.4em;
+    margin-top: 0;
+    text-align: center;
+}
+
+a {
+    color: #fc0;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #ffeb9b;
+    text-decoration: underline;
+}
+
+a:visited {
+    border: solid 2px;
+    color: #af6;
+}
+
+.container {
+    margin: auto;
+    max-width: 700px;
+}
+
+nav > ul {
+    background: url("{{ site.baseurl }}/images/nav-bg.gif") repeat;
+    border-bottom: 4px solid #444;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+    float: left;
+    margin-bottom: 1.5em;
+    margin-top: 0.3em;
+    padding-left: 0;
+    width: 100%;
+}
+
+nav > ul > li {
+    display: block;
+    float: left;
+    list-style-type: none;
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
+
+nav > ul > li.active {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.0));
+    border-bottom: 4px solid #aaa;
+    margin-bottom: -4px;
+}
+
+nav > ul > li a {
+    color: #fff;
+    line-height: 20px;
+    padding-bottom: 16px;
+    padding-left: 20px;
+    padding-top: 15px;
+    padding-right: 20px;
+}
+
+nav > ul > li a:hover {
+    background: linear-gradient(to top, rgba(0, 0, 0, 1.0), rgba(0, 0, 0, 0.0));
+    color: #fff;
+    text-decoration: none;
+}
+
+nav > ul > li a:visited {
+    color: #fff;
+}
+
+nav p {
+    color: #696969;
+    font-size: small;
+}
+
+h2 {
+    font-weight: normal;
+    margin-bottom: 0;
+    margin-top: 1.5em;
+}
+
+.post-meta {
+    color: #696969;
+    font-size: small;
+}
+
+main ul {
+    list-style-image: url("{{ site.baseurl }}/images/bullet.png");
+}
+
+pre, code {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+pre code {
+    background-color: rgba(0, 0, 0, 0);
+    padding: 0;
+}
+
+pre {
+    padding: 0.5em;
+}
+
+code {
+    padding: 2px 6px;
+}
+
+
+main img {
+    max-width: 100%;
+}
+
+.pagination {
+    margin-bottom: 2em;
+    margin-top: 2em;
+    text-align: center;
+    width: 100%;
+}
+
+.pagination-page {
+    margin-left: 2em;
+    margin-right: 2em;
+}
+
+span.pagination-older, span.pagination-newer {
+    color: #696969;
+}

@@ -1,0 +1,25 @@
+---
+layout: default
+title: Tags
+---
+<h2>Tags</h2>
+
+<p>
+{% if site.tags.size == 0 %}
+    There are currently no tags
+{% else %}
+    {% if site.tags.size == 1 %}
+        There is currently only 1 tag
+    {% else %}
+        There are {{ site.tags | size }} tags
+    {% endif %}
+{% endif %}
+amongst {{ site.posts | size }} posts.
+</p>
+
+<ul>
+    {% for tag in site.collections.tags.docs %}
+        <li><a href="{{ site.baseurl }}/tags/{{ tag.tag }}/">{{ tag.tag }}</a>
+            ({{ site.tags[tag.tag] | size }})</li>
+    {% endfor %}
+</ul>
