@@ -16,6 +16,7 @@ releases_url: https://github.com/tung/DynaHack/releases
 
 kramdown:
   input: GFM
+  smart_quotes: apos,apos,quot,quot
 
 defaults:
   -
