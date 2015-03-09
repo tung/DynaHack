@@ -9,12 +9,12 @@ No.  For a flavor of NetHack with a similar interface as DynaHack but with suppo
 
 ## How do I make the font bigger?
 
-DynaHack runs under the console program or terminal emulator provided by your operating system.  You can change the font by going into settings or preferences of that program, either in a menu or by right-clicking the window title bar or the window itself.
+DynaHack runs under the console program (`cmd.exe` on Windows) or terminal emulator provided by your operating system.  You can change the font by going into settings or preferences of that program while DynaHack is running, either in a menu or by right-clicking the window title bar or the window itself.
 
 
 ## How do I make dark blue brighter?
 
-As with changing your font, open your console program or terminal emulator's settings or preferences, find the dark blue palette entry and adjust to taste.
+As with changing your font, open your console program or terminal emulator's settings or preferences while DynaHack is running, find the dark blue palette entry and adjust to taste.
 
 
 ## How do I play DynaHack if I'm on Linux or OS X?
