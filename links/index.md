@@ -8,8 +8,8 @@ DynaHack can be found at other places on the internet.
 
 * [DynaHack on the NetHack Wiki](http://nethackwiki.com/wiki/DynaHack)
 * [DynaHack on RogueBasin](http://www.roguebasin.com/index.php?title=DynaHack)
-* [DynaHack change log](https://github.com/tung/DynaHack/blob/unnethack/doc/changelog.txt)
-* [DynaHack commit log](https://github.com/tung/DynaHack/commits/unnethack)
+* [DynaHack change log](https://github.com/tung/DynaHack/blob/unnethack/doc/changelog.txt) - Human-readable changes to DynaHack.
+* [DynaHack raw commit log](https://github.com/tung/DynaHack/commits/unnethack) - Raw DynaHack development updates.
 
 
 ## NetHack
