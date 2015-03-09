@@ -34,7 +34,7 @@ The classic roguelike adventure upon which DynaHack is based.
 
 ## acehack.de
 
-`acehack.de` hosts an Europe-based server with the same patched version of NetHack as NAO, but also offers NetHack variants like [AceHack](http://nethackwiki.com/wiki/AceHack), [dNetHack](http://nethackwiki.com/wiki/User:Chris/dNetHack), [Slash'EM Extended](http://nethackwiki.com/wiki/Slash%27EM_Extended) and a [leaked post-3.4.3 development version of NetHack](http://nethackwiki.com/wiki/Leaked_development_version).
+`acehack.de` hosts an Europe-based server with the same patched version of NetHack as NAO, but also offers NetHack variants like [AceHack](http://nethackwiki.com/wiki/AceHack), [dNetHack](http://nethackwiki.com/wiki/User:Chris/dNetHack), [Slash'EM Extended](http://nethackwiki.com/wiki/Slash%27EM_Extended) and the [leaked post-3.4.3 development version of NetHack](http://nethackwiki.com/wiki/Leaked_development_version).
 
 * [acehack.de](https://acehack.de) - Watch or play NetHack, AceHack, dNetHack, Slash'EM Extended or LeakHack online via SSH.
 * [acehack.de Web Terminal](https://acehack.de/wstty/) - Watch or play games hosted on `acehack.de` in your web browser.
