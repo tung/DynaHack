@@ -38,4 +38,4 @@ However, you can sometimes catch people streaming their DynaHack play live on [t
 
 ## What is the font used in the screenshots on this site?
 
-[GohuFont](http://font.gohu.org/).
+[GohuFont](http://font.gohu.org/).  The screenshots were taken in Linux; the Windows version of GohuFont unfortunately does not support many of the special Unicode characters used by DynaHack.
