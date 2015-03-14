@@ -60,7 +60,7 @@ a:visited {
 }
 
 nav > ul {
-    background: url("{{ site.baseurl }}/images/nav-bg.gif") repeat;
+    background: url("{{ site.baseurl }}/images/ui/nav-bg.gif") repeat;
     border-bottom: 4px solid #444;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
     float: left;
@@ -120,7 +120,7 @@ h2 {
 }
 
 main ul {
-    list-style-image: url("{{ site.baseurl }}/images/bullet.png");
+    list-style-image: url("{{ site.baseurl }}/images/ui/bullet.png");
 }
 
 pre, code {
