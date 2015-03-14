@@ -32,12 +32,11 @@ The classic roguelike adventure upon which DynaHack is based.
 * Join the `#nethack` IRC channel on `freenode.net` for live chat and gameplay announcements.
 
 
-## acehack.de
+## nethack.xd.cm
 
-`acehack.de` hosts an Europe-based server with the same patched version of NetHack as NAO, but also offers NetHack variants like [AceHack](http://nethackwiki.com/wiki/AceHack), [dNetHack](http://nethackwiki.com/wiki/User:Chris/dNetHack), [Slash'EM Extended](http://nethackwiki.com/wiki/Slash%27EM_Extended) and the [leaked post-3.4.3 development version of NetHack](http://nethackwiki.com/wiki/Leaked_development_version).
+`nethack.xd.cm` (formerly `acehack.de`) hosts <abbr title="NetHack with the nethack.alt.org patch set">NAOHack</abbr>, but also offers NetHack variants like [dNetHack](http://nethackwiki.com/wiki/User:Chris/dNetHack) and [Slash'EM Extended](http://nethackwiki.com/wiki/Slash%27EM_Extended).
 
-* [acehack.de](https://acehack.de) - Watch or play NetHack, AceHack, dNetHack, Slash'EM Extended or LeakHack online via SSH.
-* [acehack.de Web Terminal](https://acehack.de/wstty/) - Watch or play games hosted on `acehack.de` in your web browser.
+* [nethack.xd.cm](https://nethack.xd.cm) - Watch or play NetHack, dNetHack and Slash'EM Extended online via SSH using e.g. [PuTTY](http://www.chiark.greenend.org.uk/~sgtatham/putty/).
 * Join the `#acehack.de` IRC channel on `freenode.net` for live chat, gameplay and development announcements of hosted NetHack variants.
 
 
