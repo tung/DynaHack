@@ -9,7 +9,7 @@ layout: default
     <h2 class="post-title">{{ page.title }}</h2>
     <div class="post-meta">
         Posted by <a class="post-author" href="{{ site.baseurl }}/authors/{{ page.author }}/">{{ page.author }}</a>
-        on {{ page.date | date: "%B %-d, %Y" }}
+        on <a href="{{ page.url | prepend: site.baseurl }}">{{ page.date | date: "%B %-d, %Y" }}</a>
         {% for tag in page.tags %}
             {% if forloop.first %}
                 under
