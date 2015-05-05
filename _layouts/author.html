@@ -5,15 +5,22 @@ layout: default
 
 {{ content }}
 
-{% comment %}
-    I wanted a count of the number of posts by this author, but sadly neither
-    Jekyll nor Liquid provide any way to do this. :(
-{% endcomment %}
+{% assign author_posts = site.posts | where: "author", page.author %}
 
-{% for post in site.posts %}
-    {% if post.author == page.author %}
-        <article>
-            {% include posthead.html %}
-        </article>
+<p>
+{% if author_posts.size == 0 %}
+    There are currently no posts by {{ page.author }}.
+{% else %}
+    {% if author_posts.size == 1 %}
+        There is 1 post by {{ page.author }}.
+    {% else %}
+        There are {{ author_posts | size }} posts by {{ page.author }}.
     {% endif %}
+{% endif %}
+</p>
+
+{% for post in author_posts %}
+    <article>
+        {% include posthead.html %}
+    </article>
 {% endfor %}
