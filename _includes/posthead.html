@@ -1,4 +1,5 @@
-<h2 class="post-title">{% if include.link_heading %}<a class="post-link" href="{{ include.which.url | prepend: site.baseurl }}">{% endif %}{{ include.which.title }}{% if include.link_heading %}</a>{% endif %}</h2>
+{% if include.h %}{% assign h = include.h %}{% else %}{% assign h = 'h2' %}{% endif %}
+<{{ h }} class="post-title">{% if include.link_heading %}<a class="post-link" href="{{ include.which.url | prepend: site.baseurl }}">{% endif %}{{ include.which.title }}{% if include.link_heading %}</a>{% endif %}</{{ h }}>
 <div class="post-meta">
     Posted by <a class="post-author" href="{{ site.baseurl }}/authors/{{ include.which.author }}/">{{ include.which.author }}</a>
     on <a href="{{ include.which.url | prepend: site.baseurl }}">{{ include.which.date | date: "%B %-d, %Y" }}</a>

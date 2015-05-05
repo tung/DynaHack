@@ -16,8 +16,14 @@ title: Archive
 {% endif %}
 </p>
 
+{% assign year = "" %}
 {% for post in site.posts %}
+    {% assign post_year = post.date | date: "%Y" %}
+    {% unless year == post_year %}
+        {% assign year = post_year %}
+        <h2>{{ year }}</h2>
+    {% endunless %}
     <article>
-        {% include posthead.html which=post link_heading=true %}
+        {% include posthead.html which=post h='h3' link_heading=true %}
     </article>
 {% endfor %}
