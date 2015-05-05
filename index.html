@@ -7,7 +7,7 @@ layout: default
 
 {% for post in paginator.posts %}
     <article>
-        {% include posthead.html %}
+    {% include posthead.html which=post link_heading=true %}
         <div class="post-content">
             {{ post.content }}
         </div>

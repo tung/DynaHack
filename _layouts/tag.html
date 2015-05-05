@@ -19,6 +19,6 @@ layout: default
 
 {% for post in site.tags[page.tag] %}
     <article>
-        {% include posthead.html %}
+        {% include posthead.html which=post link_heading=true %}
     </article>
 {% endfor %}

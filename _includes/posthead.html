@@ -1,8 +1,8 @@
-<h2 class="post-title"><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
+<h2 class="post-title">{% if include.link_heading %}<a class="post-link" href="{{ include.which.url | prepend: site.baseurl }}">{% endif %}{{ include.which.title }}{% if include.link_heading %}</a>{% endif %}</h2>
 <div class="post-meta">
-    Posted by <a class="post-author" href="{{ site.baseurl }}/authors/{{ post.author }}/">{{ post.author }}</a>
-    on <a href="{{ post.url | prepend: site.baseurl }}">{{ post.date | date: "%B %-d, %Y" }}</a>
-    {% for tag in post.tags %}
+    Posted by <a class="post-author" href="{{ site.baseurl }}/authors/{{ include.which.author }}/">{{ include.which.author }}</a>
+    on <a href="{{ include.which.url | prepend: site.baseurl }}">{{ include.which.date | date: "%B %-d, %Y" }}</a>
+    {% for tag in include.which.tags %}
         {% if forloop.first %}
             under
         {% endif %}

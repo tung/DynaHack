@@ -1,22 +1,8 @@
 ---
 layout: default
 ---
-{% comment %}
-    div.post-meta is identical to posthead.html, but posthead.html can't be
-    used due to differing variables.
-{% endcomment %}
 <article>
-    <h2 class="post-title">{{ page.title }}</h2>
-    <div class="post-meta">
-        Posted by <a class="post-author" href="{{ site.baseurl }}/authors/{{ page.author }}/">{{ page.author }}</a>
-        on <a href="{{ page.url | prepend: site.baseurl }}">{{ page.date | date: "%B %-d, %Y" }}</a>
-        {% for tag in page.tags %}
-            {% if forloop.first %}
-                under
-            {% endif %}
-            <a class="post-tag" href="{{ site.baseurl }}/tags/{{ tag }}/">{{ tag }}</a>{% unless forloop.last %}, {% endunless %}
-        {% endfor %}
-    </div>
+    {% include posthead.html which=page %}
     <div class="post-content">
         {{ content }}
     </div>
