@@ -5,19 +5,21 @@ layout: default
 
 {{ content }}
 
+{% assign tag_posts = site.tags[page.tag] %}
+
 <p>
-{% if site.tags[page.tag].size == 0 %}
+{% if tag_posts.size == 0 %}
     There are currently no posts tagged '{{ page.tag }}'.
 {% else %}
-    {% if site.tags[page.tag].size == 1 %}
+    {% if tag_posts.size == 1 %}
         There is 1 post tagged '{{ page.tag }}'.
     {% else %}
-        There are {{ site.tags[page.tag] | size }} posts tagged '{{ page.tag }}'.
+        There are {{ tag_posts | size }} posts tagged '{{ page.tag }}'.
     {% endif %}
 {% endif %}
 </p>
 
-{% for post in site.tags[page.tag] %}
+{% for post in tag_posts %}
     <article>
         {% include posthead.html which=post link_heading=true %}
     </article>
