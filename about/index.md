@@ -3,10 +3,14 @@ title: About
 nav: about
 ---
 ## What is DynaHack?
+{:.no_toc}
 
 DynaHack is a variant of NetHack that aims to modernize core aspects of its gameplay and interface.  It merges the new content and gameplay refinements of UnNetHack with the interface changes of NitroHack, along with the randomized equipment from GruntHack (e.g. you can find a "short sword of fire" or "speed boots of stealth") and a broad mixture of minor improvements to many other aspects of the game.
 
 In NetHack, though the maps, items and monsters you encounter always change, the tactics and strategies are always the same; DynaHack was created as a response to this phenomenon.  The philosophy behind many design choices in DynaHack are **less stashing, backtracking and repetition**, and **more player experimentation and exploration**.
+
+* table of contents
+{:toc}
 
 
 ## Interface Changes

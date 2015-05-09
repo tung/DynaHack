@@ -2,6 +2,12 @@
 title: FAQ
 nav: faq
 ---
+## Frequently Asked Questions
+{:.no_toc}
+
+* table of contents
+{:toc}
+
 ## Can DynaHack be played with graphical tiles?
 
 No.  For a flavor of NetHack with a similar interface as DynaHack but with support for graphical tiles, consider trying [NetHack 4](http://nethack4.org).
