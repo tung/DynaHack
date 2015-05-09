@@ -83,7 +83,7 @@ Here are some dNetHack-related links:
 * [dNetHack on the NetHack Wiki](http://nethackwiki.com/wiki/User:Chris/dNetHack) - Frequently-updated information and announcements.
 * [dNetHack development on GitHub](https://github.com/Chris-plus-alphanumericgibberish/dnethack)
 * Watch for the **[dNetHack]** tag in [/r/nethack on Reddit](https://www.reddit.com/r/nethack).
-* Watch or play dNetHack online on `acehack.de`, and chat live in the `#acehack.de` IRC channel on `freenode.net`.
+* Watch or play dNetHack online on `nethack.xd.cm`, and chat live in the `#acehack.de` IRC channel on `freenode.net`.
 * Join the `#dnethack` IRC channel on `freenode.net` for dNetHack-specific live chat, gameplay and development announcements.
 
 
