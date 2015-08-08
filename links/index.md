@@ -4,7 +4,9 @@ nav: links
 ---
 ## DynaHack
 
-DynaHack can be found at other places on the internet.
+DynaHack can be played online on the `nethack.xd.cm` public server via SSH using e.g. PuTTY.  *See the [DynaHack FAQ]({{ site.baseurl }}/faq/) if you want to play online with numpad and are using PuTTY.*
+
+DynaHack can also be found at other places on the internet.
 
 * [DynaHack on the NetHack Wiki](https://nethackwiki.com/wiki/DynaHack)
 * [DynaHack on RogueBasin](http://www.roguebasin.com/index.php?title=DynaHack)
@@ -34,10 +36,10 @@ The classic roguelike adventure upon which DynaHack is based.
 
 ## nethack.xd.cm
 
-`nethack.xd.cm` (formerly `acehack.de`) hosts <abbr title="NetHack with the nethack.alt.org patch set">NAOHack</abbr>, but also offers NetHack variants like [dNetHack](https://nethackwiki.com/wiki/User:Chris/dNetHack), [NetHack Fourk](https://nethackwiki.com/wiki/NetHack_Fourk), and [SLASHTHEM](https://nethackwiki.com/wiki/SLASHTHEM).
+`nethack.xd.cm` (formerly `acehack.de`) hosts <abbr title="NetHack with the nethack.alt.org patch set">NAOHack</abbr>, but also offers NetHack variants like DynaHack, [dNetHack](https://nethackwiki.com/wiki/User:Chris/dNetHack), [NetHack Fourk](https://nethackwiki.com/wiki/NetHack_Fourk), and [SLASHTHEM](https://nethackwiki.com/wiki/SLASHTHEM).
 
-* [nethack.xd.cm](https://nethack.xd.cm) - Watch or play NetHack, dNetHack, NetHack Fourk and SLASHTHEM online via SSH using e.g. [PuTTY](http://www.chiark.greenend.org.uk/~sgtatham/putty/).
-* Join the `#acehack.de` IRC channel on `freenode.net` for live chat, gameplay and development announcements of hosted NetHack variants.
+* [nethack.xd.cm](https://nethack.xd.cm) - Watch or play NetHack, DynaHack, dNetHack, NetHack Fourk and SLASHTHEM online via SSH using e.g. [PuTTY](http://www.chiark.greenend.org.uk/~sgtatham/putty/).
+* Join the `#nethack.xd.cm` IRC channel on `freenode.net` for live chat, gameplay and development announcements of hosted NetHack variants.
 
 
 ## UnNetHack
@@ -83,7 +85,7 @@ Here are some dNetHack-related links:
 * [dNetHack on the NetHack Wiki](https://nethackwiki.com/wiki/User:Chris/dNetHack) - Frequently-updated information and announcements.
 * [dNetHack development on GitHub](https://github.com/Chris-plus-alphanumericgibberish/dnethack)
 * Watch for the **[dNetHack]** tag in [/r/nethack on Reddit](https://www.reddit.com/r/nethack).
-* Watch or play dNetHack online on `nethack.xd.cm`, and chat live in the `#acehack.de` IRC channel on `freenode.net`.
+* Watch or play dNetHack online on `nethack.xd.cm`, and chat live in the `#nethack.xd.cm` IRC channel on `freenode.net`.
 * Join the `#dnethack` IRC channel on `freenode.net` for dNetHack-specific live chat, gameplay and development announcements.
 
 
