@@ -87,10 +87,7 @@ nav > ul > li.active {
 nav > ul > li a {
     color: #fff;
     line-height: 20px;
-    padding-bottom: 16px;
-    padding-left: 20px;
-    padding-top: 15px;
-    padding-right: 20px;
+    padding: 15px 20px;
 }
 
 nav > ul > li a:hover {
