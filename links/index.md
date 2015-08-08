@@ -4,7 +4,7 @@ nav: links
 ---
 ## DynaHack
 
-DynaHack can be played online on the `nethack.xd.cm` public server via SSH using e.g. PuTTY.  *See the [DynaHack FAQ]({{ site.baseurl }}/faq/) if you want to play online with numpad and are using PuTTY.*
+DynaHack can be played online on the `nethack.xd.cm` public server via SSH using e.g. PuTTY.  *See the [DynaHack FAQ]({{ site.baseurl }}/faq/#is-there-an-online-server-for-dynahack) if you want to play online with numpad and are using PuTTY.*
 
 DynaHack can also be found at other places on the internet.
 
