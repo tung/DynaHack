@@ -39,22 +39,6 @@ If you use Windows and you're interested in the bleeding edge version, the game 
 
 As of August 2015, DynaHack can be played online at [`nethack.xd.cm`](https://nethack.xd.cm) via SSH using e.g. [PuTTY](http://www.chiark.greenend.org.uk/~sgtatham/putty/).
 
-**Important PuTTY note for numpad players:** By default, PuTTY sends number pad inputs in a way that is *not* recognized by `ncurses`, the library that DynaHack uses to handle terminal input and output.  To work around this:
-
-1. Open the PuTTY configuration window.
-2. From the left pane choose Terminal &gt; Features.
-3. Put a checkmark next to "Disable application keypad mode".
-4. From the left pane choose Session.
-5. Save your settings.
-
-Once done, DynaHack will pick up the number pad keys (you may need to enable Num Lock on your keyboard), and you can customize DynaHack's controls to recognize them as follows:
-
-1. Connect to `nethack.xd.cm`, login and launch DynaHack.
-2. Select "o - set options" from the main menu.
-3. Scroll down the options menu and choose "keymap".
-4. Customize the directions listed in the keymap, i.e. "east", "north", "north\_east", etc.
-5. For vanilla style repeat counts, set "repeat\_num\_auto" to true, and set "repeat\_prefix" to 'n'.
-
 You can spectate DynaHack games on `nethack.xd.cm`, but you can also sometimes catch people streaming DynaHack live on [termcast.org](http://termcast.org); in that case, you'll need to connect via `telnet termcast.org`.  (Windows users will need a telnet client such as PuTTY.)
 
 
