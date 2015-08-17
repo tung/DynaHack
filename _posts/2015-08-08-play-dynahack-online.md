@@ -8,6 +8,7 @@ Thanks to the generosity of kerio, DynaHack can now be played online on the [`ne
 
 **<strike>If you want to play DynaHack with numpad controls and use PuTTY, you will need to disable "application keypad mode" in PuTTY's configuration; see the <a href="{{site.baseurl}}/faq/#is-there-an-online-server-for-dynahack">DynaHack FAQ</a> for more details.</strike>**
 
-**2015-08-17 update**: DynaHack should now work as-is with numpad and PuTTY.
+**2015-08-17 update**: DynaHack should now work as-is with numpad and PuTTY.  Also, check out the new [nethack.xd.cm web terminal][web-term]!
 
 [nxc]: https://nethack.xd.cm
+[web-term]: https://nethack.xd.cm/hterm/

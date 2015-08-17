@@ -30,7 +30,7 @@ The classic roguelike adventure upon which DynaHack is based.
 
 `nethack.alt.org` (or *NAO* for short) is a US-based server that hosts an extensively patched version of NetHack (nicknamed <abbr title="NetHack with the nethack.alt.org patch set">NAOHack</abbr>) that can be played or watched online.
 
-* [nethack.alt.org](http://alt.org/nethack/) - Watch or play NetHack online [via telnet](https://nethackwiki.com/wiki/Telnet), view player stats.
+* [nethack.alt.org](http://alt.org/nethack/) - Watch or play NetHack online via [web terminal](https://alt.org/nethack/hterm/) or [telnet](https://nethackwiki.com/wiki/Telnet), view player stats.
 * Join the `#nethack` IRC channel on `freenode.net` for live chat and gameplay announcements.
 
 
@@ -38,7 +38,7 @@ The classic roguelike adventure upon which DynaHack is based.
 
 `nethack.xd.cm` (formerly `acehack.de`) hosts <abbr title="NetHack with the nethack.alt.org patch set">NAOHack</abbr>, but also offers NetHack variants like DynaHack, [dNetHack](https://nethackwiki.com/wiki/User:Chris/dNetHack), [NetHack Fourk](https://nethackwiki.com/wiki/NetHack_Fourk), and [SLASHTHEM](https://nethackwiki.com/wiki/SLASHTHEM).
 
-* [nethack.xd.cm](https://nethack.xd.cm) - Watch or play NetHack, DynaHack, dNetHack, NetHack Fourk and SLASHTHEM online via SSH using e.g. [PuTTY](http://www.chiark.greenend.org.uk/~sgtatham/putty/).
+* [nethack.xd.cm](https://nethack.xd.cm) - Watch or play NetHack, DynaHack, dNetHack, NetHack Fourk and SLASHTHEM online via its [web terminal](https://nethack.xd.cm/hterm/) or SSH using e.g. [PuTTY](http://www.chiark.greenend.org.uk/~sgtatham/putty/).
 * Join the `#nethack.xd.cm` IRC channel on `freenode.net` for live chat, gameplay and development announcements of hosted NetHack variants.
 
 
