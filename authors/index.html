@@ -2,13 +2,15 @@
 layout: default
 title: Authors
 ---
+{% assign authors = site.collections | where: "label", "authors" | first %}
+
 <h2>Authors</h2>
 
 <p>
-{% if site.collections.authors.docs.size == 0 %}
+{% if authors.docs.size == 0 %}
     There are currently no authors.
 {% else %}
-    {% if site.collections.authors.docs.size == 1 %}
+    {% if authors.docs.size == 1 %}
         There is currently only 1 author.
     {% else %}
         There are {{ site.tags | size }} authors.
@@ -17,7 +19,7 @@ title: Authors
 </p>
 
 <ul>
-    {% for author in site.collections.authors.docs %}
+    {% for author in authors.docs %}
         <li><a href="{{ site.baseurl }}/authors/{{ author.author }}/">{{ author.author }}</a></li>
     {% endfor %}
 </ul>

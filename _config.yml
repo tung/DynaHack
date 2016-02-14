@@ -1,3 +1,5 @@
+gems: [jekyll-paginate]
+
 url: https://tung.github.io
 baseurl: /DynaHack
 enforce_ssl: tung.github.io

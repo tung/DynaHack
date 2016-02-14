@@ -2,23 +2,26 @@
 layout: default
 title: Tags
 ---
+{% assign tags = site.collections | where: "label", "tags" | first %}
+{% assign tags_size = tags | size %}
+
 <h2>Tags</h2>
 
 <p>
-{% if site.tags.size == 0 %}
+{% if tags_size == 0 %}
     There are currently no tags
 {% else %}
-    {% if site.tags.size == 1 %}
+    {% if tags_size == 1 %}
         There is currently only 1 tag
     {% else %}
-        There are {{ site.tags | size }} tags
+        There are {{ tags_size }} tags
     {% endif %}
 {% endif %}
 amongst {{ site.posts | size }} posts.
 </p>
 
 <ul>
-    {% for tag in site.collections.tags.docs %}
+    {% for tag in tags.docs %}
         <li><a href="{{ site.baseurl }}/tags/{{ tag.tag }}/">{{ tag.tag }}</a>
             ({{ site.tags[tag.tag] | size }})</li>
     {% endfor %}
