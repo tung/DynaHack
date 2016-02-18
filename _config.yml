@@ -11,9 +11,9 @@ description: >
   A NetHack variant with randomized equipment, new items, new monsters, new
   maps, new challenges and an advanced ASCII interface.
 
-latest_version: 0.5.5
+latest_version: 0.6.0
 project_url: https://github.com/tung/DynaHack
-download_url: https://github.com/tung/DynaHack/releases/tag/v0.5.5
+download_url: https://github.com/tung/DynaHack/releases/tag/v0.6.0
 releases_url: https://github.com/tung/DynaHack/releases
 
 exclude: [Gemfile, Gemfile.lock]
