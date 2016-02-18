@@ -37,3 +37,5 @@ Read [changelog.txt](https://github.com/tung/DynaHack/blob/unnethack/doc/changel
 New to this release are 32-bit and 64-bit packages for both Windows and Linux (built on Ubuntu 15.10, but they should work in other distros).
 
 Note: I (tungtn) will no longer be working on DynaHack after this release, so please do not email me bugs or feedback.  Instead, post them to <https://github.com/tung/DynaHack/issues> so that other people can see them.
+
+**Update:** I wrote a post on [stepping down from maintaining DynaHack]({{ site.baseurl }}{% post_url 2016-02-18-stepping-down-from-maintaining-dynahack %}).
