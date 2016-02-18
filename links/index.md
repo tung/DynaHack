@@ -22,7 +22,7 @@ The classic roguelike adventure upon which DynaHack is based.
 * [NetHack Wiki](https://nethackwiki.com/wiki/Main_Page) - Filled with NetHack information, news and discussion.
   * [NetHack Wiki Forum](https://nethackwiki.com/wiki/Forum:Watercooler) - NetHack gameplay discussion on the NetHack Wiki.
 * [/r/nethack on Reddit](https://www.reddit.com/r/nethack) - NetHack discussion on Reddit.
-* [rec.games.roguelike.nethack](http://bilious.alt.org/rgrn/) - NetHack discussion newsgroup.
+* [rec.games.roguelike.nethack](https://bilious.alt.org/rgrn/) - NetHack discussion newsgroup.
 * Join the `#nethack-dev` IRC channel on `freenode.net` for occasional discussions of NetHack development and internals.
 
 
