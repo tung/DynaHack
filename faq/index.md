@@ -37,9 +37,9 @@ If you use Windows and you're interested in the bleeding edge version, the game 
 
 ## Is there an online server for DynaHack?
 
-As of August 2015, DynaHack can be played online at [`nethack.xd.cm`](https://nethack.xd.cm) via SSH using e.g. [PuTTY](http://www.chiark.greenend.org.uk/~sgtatham/putty/).
+As of August 2015, DynaHack can be played online at [`nethack.dank.ninja`](https://nethack.dank.ninja).
 
-You can spectate DynaHack games on `nethack.xd.cm`, but you can also sometimes catch people streaming DynaHack live on [termcast.org](http://termcast.org); in that case, you'll need to connect via `telnet termcast.org`.  (Windows users will need a telnet client such as PuTTY.)
+You can also sometimes catch people streaming DynaHack live on [termcast.org](http://termcast.org); in that case, you'll need to connect via `telnet termcast.org`.  (Windows users will need a telnet client such as PuTTY.)
 
 
 ## What is the font used in the screenshots on this site?

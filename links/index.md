@@ -4,7 +4,7 @@ nav: links
 ---
 ## DynaHack
 
-DynaHack can be played online on the `nethack.xd.cm` public server via SSH using e.g. PuTTY.  *See the [DynaHack FAQ]({{ site.baseurl }}/faq/#is-there-an-online-server-for-dynahack) if you want to play online with numpad and are using PuTTY.*
+DynaHack can be played online on the `nethack.dank.ninja` public server via SSH using e.g. PuTTY.  *See the [DynaHack FAQ]({{ site.baseurl }}/faq/#is-there-an-online-server-for-dynahack) if you want to play online with numpad and are using PuTTY.*
 
 DynaHack can also be found at other places on the internet.
 
@@ -34,12 +34,12 @@ The classic roguelike adventure upon which DynaHack is based.
 * Join the `#nethack` IRC channel on `freenode.net` for live chat and gameplay announcements.
 
 
-## nethack.xd.cm
+## nethack.dank.ninja
 
-`nethack.xd.cm` (formerly `acehack.de`) hosts <abbr title="NetHack with the nethack.alt.org patch set">NAOHack</abbr>, but also offers NetHack variants like DynaHack, [dNetHack](https://nethackwiki.com/wiki/User:Chris/dNetHack), [NetHack Fourk](https://nethackwiki.com/wiki/NetHack_Fourk), and [SLASHTHEM](https://nethackwiki.com/wiki/SLASHTHEM).
+`nethack.dank.ninja` (formerly `nethack.xd.cm`, formerly `acehack.de`) hosts <abbr title="NetHack with the nethack.alt.org patch set">NAOHack</abbr>, but also offers NetHack variants like DynaHack, [dNetHack](https://nethackwiki.com/wiki/User:Chris/dNetHack), [NetHack Fourk](https://nethackwiki.com/wiki/NetHack_Fourk), and [SLASHTHEM](https://nethackwiki.com/wiki/SLASHTHEM).
 
-* [nethack.xd.cm](https://nethack.xd.cm) - Watch or play NetHack, DynaHack, dNetHack, NetHack Fourk and SLASHTHEM online via its [web terminal](https://nethack.xd.cm/hterm/) or SSH using e.g. [PuTTY](http://www.chiark.greenend.org.uk/~sgtatham/putty/).
-* Join the `#nethack.xd.cm` IRC channel on `freenode.net` for live chat, gameplay and development announcements of hosted NetHack variants.
+* [nethack.dank.ninja](https://nethack.dank.ninja) - Watch or play NetHack, DynaHack, dNetHack, NetHack Fourk and SLASHTHEM online via its [web terminal](https://nethack.dank.ninja/hterm/) or SSH using e.g. [PuTTY](http://www.chiark.greenend.org.uk/~sgtatham/putty/).
+* Join the `#nethack.dank.ninja` IRC channel on `freenode.net` for live chat, gameplay and development announcements of hosted NetHack variants.
 
 
 ## UnNetHack
@@ -85,7 +85,7 @@ Here are some dNetHack-related links:
 * [dNetHack on the NetHack Wiki](https://nethackwiki.com/wiki/User:Chris/dNetHack) - Frequently-updated information and announcements.
 * [dNetHack development on GitHub](https://github.com/Chris-plus-alphanumericgibberish/dnethack)
 * Watch for the **[dNetHack]** tag in [/r/nethack on Reddit](https://www.reddit.com/r/nethack).
-* Watch or play dNetHack online on `nethack.xd.cm`, and chat live in the `#nethack.xd.cm` IRC channel on `freenode.net`.
+* Watch or play dNetHack online on `nethack.dank.ninja`, and chat live in the `#nethack.dank.ninja` IRC channel on `freenode.net`.
 * Join the `#dnethack` IRC channel on `freenode.net` for dNetHack-specific live chat, gameplay and development announcements.
 
 
@@ -99,5 +99,5 @@ Here are some other links related to NetHack and its variants:
 * [SporkHack](https://nethackwiki.com/wiki/SporkHack) *(defunct)* - NetHack variant with rebalanced gameplay.  One of the influences of UnNetHack.
 * [K-Mod](https://github.com/karadoc/Nethack) *(defunct)* - A little-known NetHack variant with rebalanced gameplay, both similar to and inspired by SporkHack.  The source of a couple of new random level generation schemes in DynaHack.
 * [Slash'EM Extended](https://nethackwiki.com/wiki/Slash%27EM_Extended) - A continuation of Slash'EM.
-* [SLASHTHEM](https://nethackwiki.com/wiki/SLASHTHEM) - A variant of Slash'EM Extended designed to balance the game back to Slash'EM levels, playable online at `nethack.xd.cm`.
-* [NetHack Fourk](https://nethackwiki.com/wiki/NetHack_Fourk) - A variant of NetHack 4 focusing on balance refinements and differentiating existing content in meaningful ways, playable online at `nethack.xd.cm`.
+* [SLASHTHEM](https://nethackwiki.com/wiki/SLASHTHEM) - A variant of Slash'EM Extended designed to balance the game back to Slash'EM levels, playable online at `nethack.dank.ninja`.
+* [NetHack Fourk](https://nethackwiki.com/wiki/NetHack_Fourk) - A variant of NetHack 4 focusing on balance refinements and differentiating existing content in meaningful ways, playable online at `nethack.dank.ninja`.
