@@ -71,7 +71,7 @@ The tone that Eric left did make things very awkward on the variant developers s
 
 Of course, the actual news of the leak had reached the community at large, and it was very frustrating for them to know that this was going on behind closed doors.  It was even more frustrating for us variant developers who really wanted to share what was going on but were afraid that the DevTeam would react by killing off communications entirely.
 
-Thankfully, Sean Hunt (coppro), at the time NetHack 4 co-developer and currently in the official NetHack DevTeam, put a lot of work into smoothing things over  He even went to visit Michael Allison, one of the DevTeam members, in person.  That eventually led to the leak announcement in September 2014, eventually followed by a number of announcements from the DevTeam to the public over the course of 2015, culminating to the December 8, 2015 release of NetHack 3.6.0, up to the git repository being made public on February 12, 2016.
+Thankfully, Sean Hunt (coppro), at the time NetHack 4 co-developer and currently in the official NetHack DevTeam, put a lot of work into smoothing things over  He even went to visit <strike>Michael Allison</strike> Mike Stephenson, one of the DevTeam members, in person.  That eventually led to the leak announcement in September 2014, eventually followed by a number of announcements from the DevTeam to the public over the course of 2015, culminating to the December 8, 2015 release of NetHack 3.6.0, up to the git repository being made public on February 12, 2016.
 
 I guess Alex Smith (ais523), development lead for NetHack 4, got his wish in the end: NetHack 4 really did eventually provoke the DevTeam into action again, in a sort of round-about way.
 
