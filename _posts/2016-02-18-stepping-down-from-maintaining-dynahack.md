@@ -2,7 +2,7 @@
 title: Stepping down from maintaining DynaHack
 author: tungtn
 date: 2016-02-18 18:17:13 +1100
-tags: [dynahack]
+tags: [dynahack, nethack, unnethack, nethack4, nitrohack]
 ---
 As mentioned in the [DynaHack 0.6.0 release post]({{ site.baseurl }}{% post_url 2016-02-18-dynahack-0-6-0-released %}), I will no longer be developing or maintaining DynaHack.  Anybody who's been following development has seen this coming a long way away; there hasn't been any meaningful development [for at least six months](https://github.com/tung/DynaHack/commits/unnethack).  For anybody who hasn't this whole thing may come as a bit of a surprise.  In either case I feel an explanation is in order.
 
